@@ -1,0 +1,124 @@
+body {
+  background-image:url("pubg2.jpg");
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  border:5px;
+ margin:10;
+}
+
+
+div.transbox {
+  width:300px;
+  margin: left;
+  border: 1px solid red;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #00000
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+.fa:hover {
+position:fixed;
+right:0;
+width:2%;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+position:fixed;
+right:100;
+width:2%;
+  background:red;
+  color: white;}
+
+.fa-twitter {
+position:fixed;
+right:200;
+width:10%;
+  background:blue;
+  color: white;
+}
+.fa-rss {
+position:fixed;
+right:300;
+width:10%;
+  background:yellow;
+  color: white;
+}
+.fa-yahoo {
+ position:fixed;
+right:400;
+width:10%; background:green;
+  color: white;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: bottom;
+  padding: 0;
+  overflow: hidden;
+position:fixed;
+bottom:0;
+width:100%;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+
+}
+
+img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+
+.column {
+  float:center;
+  width: 33.33%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

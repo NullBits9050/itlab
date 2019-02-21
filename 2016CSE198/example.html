@@ -1,0 +1,126 @@
+<html>
+<head> 
+	<title> FORMS </title>
+</head>
+<style>
+div.background {
+  background-color:grey;
+  border: 2px solid black;
+}
+</style>
+<body>
+<div class="background">
+<form >
+<b>Single line input</b>
+<br>
+	First name:<input type="text" name="first_name"/>
+	<br>
+	Last name:<input type="text" name="last_name"/>
+<br>
+<b>Multi line input</b>
+<br>	
+	Description:<br/>
+	<textarea rows="5" cols="50">
+		enter description here ...........
+	</textarea>
+
+<br>
+<b>Check Box</b>
+<br>
+	<input type="checkbox">i have a bike <br>
+	<input type="checkbox"> i have a car <br>
+
+<br>
+
+<b>Radio Button</b>
+<br>
+<input type="radio" name="gender" value="male"checked>Male<br>
+<input type="radio" name="gender" value="Female">Female<br>
+<input type="radio" name="gender" value="Other">Other<br>
+
+<b>Select Box </b>
+<br>
+<select name="cars" size="3" multiple>     <!--"Size" is used for displaying names without scrolling, "multiple" to display all elements with
+						scroller -->
+	<option value="volvo">volvo</option>
+	<option value="benz">Benz</option>
+	<option value="fiat">Fiat</option>
+	<option value="audi" selected>Audi</option>
+</select>
+<br>
+
+<b> Button </b>
+<br>
+	<input type="button" name="ok" value="OK" />
+	<button type="button" onclick="alert('Hello World!')">click me!</button>
+	<input type="button" name="imagebutton" src="giphy.gif"/><br>
+
+<b> Password </b>
+<br>
+	<input type="password" name="psw">
+	<input type="submit" value="submit">
+	<input type="reset">
+	<input type="color"><br>
+<b> Date </b>
+<input type="date"><br>
+<b> Email<b>
+<input type="email"><br>
+<b> File Upload </b>
+<input type="file"><br>
+<b> Month </b>
+<input type="month"><br>
+<b> Number </b>
+<input type="number"><br>
+<b> time </b>
+<input type="time"><br>
+<b> URL </b>
+<input type="url"><br>
+<b>Range</b>
+<input type="range" min="0" max="20"><br>
+
+<b> **Read only Value** </b>
+<br>
+<input type="text" name="firstname" value="john" readonly><br>
+<input type="text" name="firstname" value="john" disabled><br>
+
+<!-- Length of text Box -->
+<B> Length of text Box </b>
+<br>
+<input type="text" name="firstname" maxlength="10">
+<br>
+<B> Auto focus </b><!-- "AUTO FOCUS" USED TO focus on specific field while page is loaded -->
+<input type="text" name="firstname" autofocus><br>
+
+<b> FORM ACTION<b>
+<form action="details.php" id="form1">
+	First name:<input type="text" name="fname"><br>
+	<input type="submit" value="submit">
+</form>
+<br>
+<B>pattern<b>
+<br>
+<input type="text" name="country_code" pattern=[A-Za-z]{3}">
+<br>
+<b>Place Holder <b>
+<br>
+<input type="text" name="firstname" placeholder="first name">
+<br>
+<input type="text" name="firstname" name="username" required>
+<br>
+<b> FieldSet </b>
+<fieldset>
+<legend> Personal information</legend>
+first name:<br>
+<input type="text" name="firstname" value="mickey"><br>
+last name:<br>
+<input type="text" name="lastname" value="mouse"><br>
+<input type="submit" value="Submit">
+</fieldset>
+
+
+
+
+</div>
+</form>
+</body>
+</html>

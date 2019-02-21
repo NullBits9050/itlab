@@ -1,0 +1,42 @@
+div.background {
+  background: url(pubg2.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #00000
+}
+::selection {
+  color: red;
+  background: grey;
+}
+p::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: green;
+  font-variant: small-caps;
+}
+div1 {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div1:hover {
+display:back;
+  background-color: blue;
+}
