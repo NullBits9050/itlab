@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("ajax-content").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/home/itsec3/2016CSE198/ajax_info.html", true);
+  xhttp.send();
+document.getElementById('revel').style.display='none';
+}
+</script>
+
+<center><h1> Today is ur special day</h1> 
+	<button id="reveal" onclick="loadDoc()" class="button"> What's That </button> </center>
+	<div id="ajax-content">
+	</div>
+
+
+</body>
+</html>
